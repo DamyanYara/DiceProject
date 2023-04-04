@@ -21,7 +21,7 @@ const HomeScreen = () => {
         <View style={styles.container}>
         
             <View style={styles.counter}>
-                <Text>Total Value: {result.one+result.two+result.thre+result.four}</Text>
+                <Text style={styles.counterView}>Total Value: {result.one+result.two+result.thre+result.four}</Text>
             </View >
         <View style={styles.diceContainer}> 
             <DiceBoxes number={result.one}/>
@@ -30,7 +30,7 @@ const HomeScreen = () => {
             <DiceBoxes number={result.four}/>
         </View>
 
-        <Button title="Roll Dice" onPress={handleClick}/>
+        <Button style={styles.button} title="Roll Dice" onPress={handleClick}/>
         
         </View>
     );
@@ -46,13 +46,22 @@ const styles = StyleSheet.create({
     },
     counter:{
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
     },
     container:{
         height:800,
         marginTop:100,
         justifyContent:"space-between",
         paddingVertical: 50,
+        backgroundColor: "#40E0D0"
+    },
+    button:{
+        color: "#edc9af",
+    },
+    counterView:{
+        color:  "#e9967a",
+        fontSize: 30
+
     }
 });
 

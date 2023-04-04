@@ -12,14 +12,14 @@ const DiceBoxes = ({number}) => {
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: "green",
+        backgroundColor: "#21726A",
         width: 80,
         height: 80,
         justifyContent: "center",
         alignItems: "center"
     },
     number:{
-        color: "red",
+        color: "#edc9af",
         fontSize: 30,
 
     }
